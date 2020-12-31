@@ -13,7 +13,8 @@ app.use(bodyParser.urlencoded({
 }));
 app.set("view engine", "ejs");
 
-const DBUrl = process.env.MONGO_URL || "mongodb://localhost:27017/tagDB";
+// const DBUrl = process.env.MONGO_URL || "mongodb://localhost:27017/tagDB";
+const DBUrl = "mongodb+srv://ankita:Ankita@1@cluster0.lvjw8.mongodb.net/<dbname>?retryWrites=true&w=majority"
 mongoose.connect(DBUrl, {
   useNewUrlParser: true,
   useUnifiedTopology: true
